@@ -1,186 +1,243 @@
 # ML_Regression_Linear_vs_Random_Forest
 Prediksi Harga Mobil dengan model ML Regression Linear dan Random Forest
-Prediction Used Car Prices Using Linear Regression vs Random Forest Regression
-Comparative Study of Linear Regression and Random Forest Regression for Used Car Price Prediction
-Project Overview
+# 🚗 Prediction Used Car Prices Using Linear Regression vs Random Forest Regression
 
-This project develops a machine learning model to predict used car selling prices using historical vehicle transaction data. Two regression algorithms are compared:
+> Comparative Study of Linear Regression and Random Forest Regression for Used Car Price Prediction
 
-Linear Regression
-Random Forest Regression
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?logo=scikitlearn)
+![Google Colab](https://img.shields.io/badge/Google-Colab-F9AB00?logo=googlecolab)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-The objective is to evaluate which model provides better predictive performance based on standard regression evaluation metrics.
+---
 
-The project follows a complete machine learning workflow, including:
+## 📌 Project Overview
 
-Data Collection
-Data Preprocessing
-Exploratory Data Analysis (EDA)
-Model Development
-Model Evaluation
-Price Prediction
-Team Members
-Name
-M. Taufiq Ridwan
-Darul Setiawan
-Anang Santoso
-Reza Fabian
-Joko
-Project Details
-Title
+This project aims to develop and compare two supervised machine learning algorithms for predicting **used car selling prices** using historical vehicle transaction data.
 
-Prediction Used Car Prices Using Linear Regression vs Random Forest Regression
+The comparison is conducted between:
 
-Study Type
+- 📈 Linear Regression
+- 🌲 Random Forest Regression
 
-Comparative Machine Learning Study
+The project follows a complete machine learning workflow, from data preprocessing and exploratory data analysis (EDA) to model evaluation and price prediction.
 
-Domain
+---
 
-Artificial Intelligence
+## 👥 Team Members
 
-Machine Learning
+| Name |
+|------|
+| **M. Taufiq Ridwan** |
+| **Darul Setiawan** |
+| **Anang Santoso** |
+| **Reza Fabian** |
+| **Joko** |
 
-Automotive Data Analytics
+---
 
-Regression Analysis
+# 🎯 Objectives
 
-Analysis Goals
+This project aims to:
 
-The objectives of this project are:
+- Predict used car selling prices using machine learning.
+- Compare Linear Regression and Random Forest Regression.
+- Evaluate model performance using regression metrics.
+- Identify the most influential variables affecting vehicle prices.
+- Recommend the best model for used car price prediction.
 
-Predict used car selling prices using machine learning.
-Compare the performance of Linear Regression and Random Forest Regression.
-Identify the most accurate regression model.
-Analyze the influence of vehicle attributes on selling prices.
-Demonstrate the application of supervised learning in automotive price prediction.
-Dataset Information
-Dataset
+---
 
+# 📂 Dataset
+
+**Dataset Name**
+
+```
 car_prices.csv
+```
 
-Source
+**Source**
 
-Kaggle
+Kaggle Used Car Auction Dataset
 
-Dataset Summary
-Approximately 558,837 used car transaction records
-16 variables
-Large-scale real-world automotive sales dataset
-Target Variable
+### Dataset Summary
 
-sellingprice
+| Item | Description |
+|------|-------------|
+| Records | ±558,837 |
+| Features | 16 Variables |
+| Target | sellingprice |
+| Problem Type | Supervised Learning (Regression) |
 
-Actual selling price of each vehicle.
+---
 
-Features
-Feature	Description
-year	Vehicle production year
-make	Manufacturer
-model	Vehicle model
-trim	Vehicle trim
-body	Vehicle body type
-transmission	Transmission type
-state	Sale location
-condition	Vehicle condition score
-odometer	Mileage
-color	Exterior color
-interior	Interior color
-seller	Seller
-mmr	Manheim Market Report value
-saledate	Transaction date
-Methodology
-1. Data Preprocessing
+## 📊 Features
 
-The preprocessing stage includes:
+| Feature | Description |
+|----------|-------------|
+| year | Production Year |
+| make | Manufacturer |
+| model | Vehicle Model |
+| trim | Vehicle Variant |
+| body | Body Type |
+| transmission | Transmission Type |
+| state | Sale Location |
+| condition | Vehicle Condition |
+| odometer | Mileage |
+| color | Exterior Color |
+| interior | Interior Color |
+| seller | Seller |
+| mmr | Manheim Market Report Value |
+| saledate | Transaction Date |
 
-Checking Missing Values
-Checking Duplicate Records
-Removing unnecessary columns
-Selecting target variable
-Encoding categorical features
-Separating features and target
-Train-Test Split
-Numerical and categorical feature preparation
-2. Exploratory Data Analysis (EDA)
+---
 
-Performed analyses include:
+# 🔬 Methodology
 
-Descriptive Statistics
-Selling Price Distribution
-Odometer Distribution
-Correlation Matrix
-Selling Price by Production Year
+The project follows the CRISP-DM-inspired workflow below.
 
-EDA helps understand data characteristics before model development.
-
-3. Machine Learning Models
+```text
+Dataset
+    │
+    ▼
+Data Preprocessing
+    │
+    ▼
+Exploratory Data Analysis (EDA)
+    │
+    ▼
+Feature Engineering
+    │
+    ▼
 Linear Regression
-
-A statistical regression model that assumes a linear relationship between predictors and target.
-
+    │
+    ▼
 Random Forest Regression
-
-An ensemble learning algorithm based on multiple decision trees capable of modeling complex nonlinear relationships.
-
-Model Evaluation Metrics
-
-Three evaluation metrics are used:
-
-Mean Absolute Error (MAE)
-Root Mean Squared Error (RMSE)
-Coefficient of Determination (R²)
-Results
-Linear Regression
-Metric	Value
-MAE	1038.61
-RMSE	1620.51
-R² Score	0.9711
-Random Forest Regression
-Metric	Value
-MAE	918.88
-RMSE	1522.03
-R² Score	0.9745
+    │
+    ▼
+Model Evaluation
+    │
+    ▼
 Performance Comparison
-Metric	Linear Regression	Random Forest
-MAE	1038.61	918.88
-RMSE	1620.51	1522.03
-R²	0.9711	0.9745
-Best Model
+    │
+    ▼
+Price Prediction
+```
 
-Random Forest Regression
+---
 
-The Random Forest model achieved:
+## 🛠 Data Preprocessing
 
-Lower Mean Absolute Error
-Lower Root Mean Squared Error
-Higher R² Score
+The preprocessing steps include:
 
-indicating better predictive accuracy than Linear Regression.
+- ✅ Check Missing Values
+- ✅ Check Duplicate Data
+- ✅ Remove Unnecessary Columns
+- ✅ Define Target Variable
+- ✅ Encode Categorical Features
+- ✅ Feature & Target Separation
+- ✅ Train-Test Split
+- ✅ Numerical & Categorical Feature Processing
 
-Prediction Example
+---
 
-Example input:
+## 📈 Exploratory Data Analysis (EDA)
 
-Feature	Value
-Year	2020
-Make	Toyota
-Model	Corolla
-Trim	LE
-Body	Sedan
-Transmission	Automatic
-State	California
-Condition	42
-Odometer	35,000
-Color	White
-Interior	Black
-Seller	Dealer
-MMR	18,500
-Predicted Selling Price
+EDA includes:
+
+- Descriptive Statistics
+- Selling Price Distribution
+- Odometer Distribution
+- Correlation Matrix
+- Selling Price by Production Year
+
+---
+
+# 🤖 Machine Learning Models
+
+## 1️⃣ Linear Regression
+
+Linear Regression is used as the baseline model to estimate vehicle prices assuming linear relationships among variables.
+
+### Performance
+
+| Metric | Value |
+|---------|------:|
+| MAE | **1038.61** |
+| RMSE | **1620.51** |
+| R² Score | **0.9711** |
+
+---
+
+## 2️⃣ Random Forest Regression
+
+Random Forest Regression is an ensemble learning algorithm capable of capturing complex nonlinear relationships between vehicle features and selling prices.
+
+### Performance
+
+| Metric | Value |
+|---------|------:|
+| MAE | **918.88** |
+| RMSE | **1522.03** |
+| R² Score | **0.9745** |
+
+---
+
+# 📊 Model Comparison
+
+| Metric | Linear Regression | Random Forest |
+|---------|-----------------:|--------------:|
+| MAE | 1038.61 | **918.88** ✅ |
+| RMSE | 1620.51 | **1522.03** ✅ |
+| R² Score | 0.9711 | **0.9745** ✅ |
+
+### 🏆 Best Model
+
+**Random Forest Regression**
+
+Reasons:
+
+- Lower MAE
+- Lower RMSE
+- Higher R² Score
+- Better ability to model nonlinear relationships
+- More accurate predictions for large datasets
+
+---
+
+# 🚘 Example Prediction
+
+### Input
+
+| Feature | Value |
+|----------|------|
+| Year | 2020 |
+| Make | Toyota |
+| Model | Corolla |
+| Trim | LE |
+| Body | Sedan |
+| Transmission | Automatic |
+| State | California |
+| Condition | 42 |
+| Odometer | 35,000 |
+| Color | White |
+| Interior | Black |
+| Seller | Dealer |
+| MMR | 18,500 |
+
+### Predicted Selling Price
+
+```text
+Estimated Selling Price
 
 $19,128.50
+```
 
-Repository Structure
+---
+
+# 📁 Repository Structure
+
+```text
 Prediction-Used-Car-Prices/
 │
 ├── data/
@@ -190,10 +247,13 @@ Prediction-Used-Car-Prices/
 │   └── ML_Regression_Linear_vs_Random_Forest.ipynb
 │
 ├── images/
-│   ├── EDA/
-│   ├── LinearRegression/
-│   ├── RandomForest/
-│   └── Comparison/
+│   ├── cover.png
+│   ├── preprocessing.png
+│   ├── eda.png
+│   ├── linear_regression.png
+│   ├── random_forest.png
+│   ├── comparison.png
+│   └── prediction.png
 │
 ├── presentation/
 │   └── Prediction Used Car Prices Using Linear Regression vs Random Forest Regression.pdf
@@ -201,57 +261,65 @@ Prediction-Used-Car-Prices/
 ├── README.md
 │
 └── LICENSE
-Technologies Used
-Python
-Google Colab
-Pandas
-NumPy
-Matplotlib
-Scikit-learn
-Machine Learning Workflow
-Dataset
-      │
-      ▼
-Data Preprocessing
-      │
-      ▼
-Exploratory Data Analysis
-      │
-      ▼
-Feature Engineering
-      │
-      ▼
-Linear Regression
-      │
-      ├──────────────┐
-      ▼              ▼
-Random Forest Regression
-      │
-      ▼
-Model Evaluation
-      │
-      ▼
-Performance Comparison
-      │
-      ▼
-Used Car Price Prediction
-Conclusion
+```
 
-This project demonstrates the application of supervised machine learning techniques for predicting used car prices using a large-scale automotive dataset. Both Linear Regression and Random Forest Regression achieved excellent predictive performance, with R² values above 97%.
+---
 
-Among the evaluated models, Random Forest Regression consistently outperformed Linear Regression by producing lower prediction errors (MAE and RMSE) and a higher coefficient of determination (R²). These results indicate that Random Forest Regression is more effective at capturing both linear and nonlinear relationships among vehicle attributes, making it the preferred model for used car price prediction.
+# 💻 Technologies
 
-Future Work
+- Python
+- Google Colab
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
 
-Potential improvements for future research include:
+---
 
-Advanced Feature Engineering
-Hyperparameter Optimization
-XGBoost Regression
-LightGBM Regression
-CatBoost Regression
-Deep Learning Regression Models
-Explainable AI (SHAP/LIME)
-Web-Based Price Prediction Application
-Real-Time Prediction System
-Integration with Automotive Marketplace APIs
+# 📐 Evaluation Metrics
+
+Three regression metrics were used:
+
+- **Mean Absolute Error (MAE)**
+- **Root Mean Squared Error (RMSE)**
+- **Coefficient of Determination (R² Score)**
+
+---
+
+# ✅ Conclusion
+
+This study demonstrates that both Linear Regression and Random Forest Regression achieve excellent predictive performance for used car price estimation.
+
+However, **Random Forest Regression** consistently outperformed Linear Regression by producing:
+
+- Lower Mean Absolute Error (MAE)
+- Lower Root Mean Squared Error (RMSE)
+- Higher R² Score
+
+These results indicate that Random Forest Regression is more effective in modeling both linear and nonlinear relationships among vehicle characteristics, making it the preferred model for used car price prediction.
+
+---
+
+# 🚀 Future Work
+
+Potential improvements include:
+
+- Feature Engineering Optimization
+- Hyperparameter Tuning
+- XGBoost Regression
+- LightGBM
+- CatBoost
+- Deep Learning Regression
+- Explainable AI (SHAP & LIME)
+- Web-Based Price Prediction System
+- Real-Time Prediction API
+
+---
+
+# 📄 License
+
+This project is intended for **educational and research purposes**.
+
+---
+
+## ⭐ If you find this project useful, consider giving it a star on GitHub!
